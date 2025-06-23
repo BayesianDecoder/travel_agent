@@ -82,7 +82,8 @@ Using this and your own knowledge, create a well-structured travel itinerary inc
 
 Include:
 - 4-paragraph city intro
-- a **Detailed** Day-wise plan with time blocks and make sure the places are not repetitive to vist
+- a **Detailed** Day-wise plan with time blocks and make sure the places are not repetitive to visit again. 
+- plan the days in such a way that if once the person visits a particular area , he should see all the places in that area  within that day and should not visit the same place in any other day. 
 - Tips on transport, food, events
 - Budget breakdown under {budget} Rupees
 
@@ -155,7 +156,7 @@ with st.form("trip_form"):
     date_from = st.date_input("📅 Departure Date")
     date_to = st.date_input("📅 Return Date")
     interests = st.text_area("🎯 Your Interests", "food, adventure, markets")
-    budget = st.number_input("💰 Budget (₹)", min_value=5000, step=500, value=30000)
+    budget = st.number_input("💰 Budget per person (₹)", min_value=5000, step=500, value=30000)
     submitted = st.form_submit_button("🚀 Generate Travel Plan")
 
 if submitted:
